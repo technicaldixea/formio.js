@@ -1,5 +1,5 @@
 export default {
-  'label': 'Text Field',
+  'label': 'Text Field Test Modif',
   'showWordCount': true,
   'tableView': true,
   'validate': {

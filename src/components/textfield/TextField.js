@@ -6,7 +6,7 @@ import _ from 'lodash';
 export default class TextFieldComponent extends Input {
   static schema(...extend) {
     return Input.schema({
-      label: 'Text Field',
+      label: 'Text Field Test Modif',
       key: 'textField',
       type: 'textfield',
       mask: false,
@@ -27,7 +27,7 @@ export default class TextFieldComponent extends Input {
 
   static get builderInfo() {
     return {
-      title: 'Text Field',
+      title: 'Text Field Test Modif',
       icon: 'terminal',
       group: 'basic',
       documentation: '/userguide/form-building/form-components#text-field',

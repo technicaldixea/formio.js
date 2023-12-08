@@ -1,5 +1,5 @@
 export default {
-  'label': 'Text Field',
+  'label': 'Text Field Test Modif',
   'allowMultipleMasks': true,
   'spellcheck': true,
   'tableView': true,

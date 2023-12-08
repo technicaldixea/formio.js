@@ -43,7 +43,7 @@ describe('TextField Component', () => {
   it('Should check mask and value in the textfield component in the email template', (done) => {
     const formJson =  {
       components: [{
-          label: 'Text Field',
+          label: 'Text Field Test Modif',
           tableView: true,
           allowMultipleMasks: true,
           inputMasks: [{
@@ -74,8 +74,8 @@ describe('TextField Component', () => {
           assert.equal(textField.dataValue.maskName, 'mask2', 'Should check maskName');
           const toString = textField.getValueAsString(textField.dataValue, { email: true });
           assert.ok(toString.includes('table'), 'Email template should render html table');
-          assert.ok(toString.includes(textField.dataValue.maskName), 'Email template should have Text Field mackName');
-          assert.ok(toString.includes(textField.dataValue.value), 'Email template should have Text Field value');
+          assert.ok(toString.includes(textField.dataValue.maskName), 'Email template should have Text Field Test Modif mackName');
+          assert.ok(toString.includes(textField.dataValue.value), 'Email template should have Text Field Test Modif value');
           done();
         }, 300);
       })
@@ -177,7 +177,7 @@ describe('TextField Component', () => {
   it('Should provide one custom error message', (done) => {
     const formJson =  {
       components: [{
-          label: 'Text Field',
+          label: 'Text Field Test Modif',
           tableView: true,
           validate: {
             pattern: '^[0-9]*$]',
@@ -267,7 +267,7 @@ describe('TextField Component', () => {
     Formio.createForm(element, form).then(form => {
       const component = form.getComponent('textField');
       let changed = component.setValue(value);
-      const error = 'Text Field does not match the mask.';
+      const error = 'Text Field Test Modif does not match the mask.';
 
       if (value) {
         assert.equal(changed, true, 'Should set value');
@@ -344,7 +344,7 @@ describe('TextField Component', () => {
 
           const component = form.getComponent('textField');
           const changed = component.setValue(value);
-          const error = 'Text Field does not match the mask.';
+          const error = 'Text Field Test Modif does not match the mask.';
 
           if (value) {
             assert.equal(changed, true, 'Should set value');
@@ -455,7 +455,7 @@ describe('TextField Component', () => {
 
           const component = form.getComponent('textField');
           const changed = component.setValue(value);
-          const error = 'Text Field does not match the mask.';
+          const error = 'Text Field Test Modif does not match the mask.';
 
           if (value) {
             assert.equal(changed, true, 'Should set value');
@@ -557,7 +557,7 @@ describe('TextField Component', () => {
 
           const component = form.getComponent('textField');
           const changed = component.setValue(value);
-          const error = 'Text Field does not match the mask.';
+          const error = 'Text Field Test Modif does not match the mask.';
 
           if (value) {
             assert.equal(changed, true, 'Should set value');
@@ -660,7 +660,7 @@ describe('TextField Component', () => {
 
           const component = form.getComponent('textField');
           const changed = component.setValue(value);
-          const error = 'Text Field does not match the mask.';
+          const error = 'Text Field Test Modif does not match the mask.';
 
           if (value) {
             assert.equal(changed, true, 'Should set value');
@@ -754,7 +754,7 @@ describe('TextField Component', () => {
           form.setPristine(false);
           const component = form.getComponent('textField');
           const changed = component.setValue({ value: value, maskName: mask.mask });
-          const error = 'Text Field does not match the mask.';
+          const error = 'Text Field Test Modif does not match the mask.';
 
           if (value) {
             assert.equal(changed, true, 'Should set value');
@@ -817,7 +817,7 @@ describe('TextField Component', () => {
           assert.equal(input.placeholder, '.._../..', 'Should set placeholder using the char setting');
 
           const changed = component.setValue(value);
-          const error = 'Text Field does not match the mask.';
+          const error = 'Text Field Test Modif does not match the mask.';
 
           if (value) {
             assert.equal(changed, true, 'Should set value');
@@ -1111,7 +1111,7 @@ describe('TextField Component', () => {
         checkCalendarState(false);
         const widget = component.element.querySelector('.flatpickr-input').widget;
 
-        assert.equal(component.getValue(), date, 'Should set text field value');
+        assert.equal(component.getValue(), date, 'Should set Text Field Test Modif value');
         assert.equal(widget.calendar.input.value, date, 'Should set flatpickr value');
         assert.equal(widget.calendar.currentMonth, 2, 'Should set correct month');
         assert.equal(widget.calendar.currentYear, 2031, 'Should set correct year');
@@ -1192,7 +1192,7 @@ describe('TextField Component', () => {
           setTimeout(() => {
             checkCalendarState(true, 21);
 
-            assert.equal(component.getValue(), date, 'Should set text field value');
+            assert.equal(component.getValue(), date, 'Should set Text Field Test Modif value');
             const widget = component.element.querySelector('.flatpickr-input').widget;
             assert.equal(widget.calendar.input.value, date, 'Should set flatpickr value');
             assert.equal(widget.calendar.currentMonth, 0, 'Should set correct month');
@@ -1202,7 +1202,7 @@ describe('TextField Component', () => {
 
             setTimeout(() => {
               checkCalendarState(false);
-              assert.equal(component.getValue(), date, 'Should save text field value');
+              assert.equal(component.getValue(), date, 'Should save Text Field Test Modif value');
 
               document.body.innerHTML = '';
               done();
@@ -1269,7 +1269,7 @@ describe('TextField Component', () => {
       triggerDateInputEvent('focus');
 
        setTimeout(() => {
-        assert.equal(component.getValue(), date, 'Should set text field value');
+        assert.equal(component.getValue(), date, 'Should set Text Field Test Modif value');
         date = '';
         checkCalendarState(true);
         triggerDateInputEvent('input', date);
@@ -1281,7 +1281,7 @@ describe('TextField Component', () => {
           setTimeout(() => {
             checkCalendarState(true, '', true);
 
-            assert.equal(component.getValue(), date, 'Should set text field value');
+            assert.equal(component.getValue(), date, 'Should set Text Field Test Modif value');
             const widget = component.element.querySelector('.flatpickr-input').widget;
             assert.equal(widget.calendar.input.value, date, 'Should set flatpickr value');
 
@@ -1289,7 +1289,7 @@ describe('TextField Component', () => {
 
             setTimeout(() => {
               checkCalendarState(false);
-              assert.equal(component.getValue(), date, 'Should save text field value');
+              assert.equal(component.getValue(), date, 'Should save Text Field Test Modif value');
               document.body.innerHTML = '';
               done();
             }, 300);

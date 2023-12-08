@@ -7,7 +7,7 @@ export default {
   display: 'form',
   components: [
     {
-      label: 'Text Field',
+      label: 'Text Field Test Modif',
       inputMask: '99-99',
       applyMaskOn: 'blur',
       tableView: true,

@@ -2,7 +2,7 @@ export default {
   type: 'form',
   components: [
     {
-      label: 'Text Field with Input Mask',
+      label: 'Text Field Test Modif with Input Mask',
       tableView: true,
       key: 'textField',
       type: 'textfield',
@@ -10,7 +10,7 @@ export default {
       input: true
     },
     {
-      label: 'Text Field with Display Mask',
+      label: 'Text Field Test Modif with Display Mask',
       tableView: true,
       key: 'textFieldDisplayMask',
       type: 'textfield',
@@ -18,7 +18,7 @@ export default {
       input: true
     },
     {
-      label: 'Text Field with Display and Input Masks',
+      label: 'Text Field Test Modif with Display and Input Masks',
       tableView: true,
       key: 'textFieldDisplayAndInputMasks',
       type: 'textfield',
@@ -27,7 +27,7 @@ export default {
       input: true
     },
     {
-      label: 'Text Field with Display and Input Masks',
+      label: 'Text Field Test Modif with Display and Input Masks',
       tableView: true,
       key: 'textFieldDisplayAndInputMasksReverse',
       type: 'textfield',

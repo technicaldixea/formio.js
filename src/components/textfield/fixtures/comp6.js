@@ -2,7 +2,7 @@ export default {
 	type: 'form',
 	components: [
     {
-      label: 'Text Field',
+      label: 'Text Field Test Modif',
       tableView: true,
       key: 'textField',
       type: 'textfield',
